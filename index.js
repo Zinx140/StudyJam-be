@@ -10,7 +10,6 @@ const authentication = require("./src/middlewares/authentication");
 const app = express();
 const port = 3001;
 
-// require("dotenv").config();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
