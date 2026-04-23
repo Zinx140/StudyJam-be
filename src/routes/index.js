@@ -1,9 +1,11 @@
+const authRouter = require("./authRoutes");
 const geminiRouter = require("./geminiRoutes");
 const newsRouter = require("./newsRoutes");
-const authRouter = require("./authRoutes");
+const userRouter = require("./userRoutes");
 
 module.exports = {
+  authRouter,
   geminiRouter,
   newsRouter,
-  authRouter,
+  userRouter,
 };
