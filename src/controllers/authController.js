@@ -42,17 +42,17 @@ const login = async (req, res) => {
     });
   }
 
-  const result = JSON.parse(user_login.Roles.permissions);
-  const permissions = JSON.parse(result);
-
-  const user = {
-    user_id: user_login.user_id,
-    role_id: user_login.role_id,
-    permissions: permissions,
-  };
-
   const check_pass = await bcrypt.compare(password, user_login.password);
   if (check_pass) {
+    const result = JSON.parse(user_login.Roles.permissions);
+    const permissions = JSON.parse(result);
+
+    const user = {
+      user_id: user_login.user_id,
+      role_id: user_login.role_id,
+      permissions: permissions,
+    };
+
     const access_token = generateAccessToken(user);
     const refresh_token = generateRefreshToken(user);
 

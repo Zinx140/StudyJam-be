@@ -25,7 +25,7 @@
                 },
                 {
                   "key": "email",
-                  "value": "hanchandra14@gmail.com",
+                  "value": "hanchandra123@gmail.com",
                   "type": "text",
                   "uuid": "d17c63a2-329a-4740-99c9-f112ca4cd9e1"
                 },
@@ -216,13 +216,13 @@
               "urlencoded": [
                 {
                   "key": "headline",
-                  "value": "Test",
+                  "value": "Teknologi AI Terbaru di Tahun 2026",
                   "type": "text",
                   "uuid": "501001e8-18cd-4951-922b-60f687747dd0"
                 },
                 {
                   "key": "content",
-                  "value": "awdawdawdwadwa",
+                  "value": "Isi konten berita yang menjelaskan perkembangan kecerdasan buatan yang semakin efisien dan membantu produktivitas manusia sehari-hari...",
                   "type": "text",
                   "uuid": "1b16096b-2392-4907-ad48-71dda23b09fb"
                 }
@@ -251,27 +251,27 @@
               "urlencoded": [
                 {
                   "key": "headline",
-                  "value": "TESTTTT12",
+                  "value": "Eksplorasi Ruang Angkasa: Misi Mars Terbaru Berhasil Meluncur",
                   "type": "text",
                   "uuid": "d473527b-f908-4c8e-a41e-424634cf7a4b"
                 },
                 {
                   "key": "content",
-                  "value": "awqweqe1213asdsa",
+                  "value": "Badan antariksa internasional melaporkan bahwa roket generasi terbaru telah berhasil lepas landas menuju Mars untuk memulai misi penelitian tanah dan atmosfer...",
                   "type": "text",
                   "uuid": "1273a17c-301f-4667-8c79-96f5705843a7"
                 }
               ]
             },
             "url": {
-              "raw": "localhost:3000/news/1",
+              "raw": "localhost:3000/news/11",
               "host": [
                 "localhost"
               ],
               "port": "3000",
               "path": [
                 "news",
-                "1"
+                "11"
               ]
             }
           },
@@ -282,15 +282,19 @@
           "request": {
             "method": "DELETE",
             "header": [],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": []
+            },
             "url": {
-              "raw": "localhost:3000/news/1",
+              "raw": "localhost:3000/news/11",
               "host": [
                 "localhost"
               ],
               "port": "3000",
               "path": [
                 "news",
-                "1"
+                "11"
               ]
             }
           },
@@ -303,9 +307,16 @@
       "item": [
         {
           "name": "Ambil Semua Akun/User",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "GET",
             "header": [],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": []
+            },
             "url": {
               "raw": "localhost:3000/users",
               "host": [
@@ -321,9 +332,16 @@
         },
         {
           "name": "Ambil User berdasarkan ID",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "GET",
             "header": [],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": []
+            },
             "url": {
               "raw": "localhost:3000/users/1",
               "host": [
@@ -355,14 +373,14 @@
               ]
             },
             "url": {
-              "raw": "localhost:3000/users/1",
+              "raw": "localhost:3000/users/2",
               "host": [
                 "localhost"
               ],
               "port": "3000",
               "path": [
                 "users",
-                "1"
+                "2"
               ]
             }
           },
@@ -402,7 +420,7 @@
               "urlencoded": [
                 {
                   "key": "news_ids",
-                  "value": "21",
+                  "value": "1,2",
                   "type": "text",
                   "uuid": "58fc9e47-1fd7-4be1-9ef6-366971203932"
                 }
@@ -423,6 +441,21 @@
           "response": []
         }
       ]
+    },
+    {
+      "name": "Test Endpoint Pertama",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:3000",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000"
+        }
+      },
+      "response": []
     }
   ]
 }
