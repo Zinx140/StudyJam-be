@@ -10,7 +10,7 @@ Backend API untuk:
 ## Download Template File
 - Silahkan download template disini jika anda mau mencoba coding dan tidak langsung terima jadi!
 
-<a href="template.zip?raw=true" download="template.zip"> 
+<a href="template.zip?raw=true" download="template.zip" target="_blank">
     <img src="https://img.shields.io/badge/⬇️-Unduh Template-1E90FF.svg?style=flat"
          alt="Unduh Template"
          width="200">
