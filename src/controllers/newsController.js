@@ -83,7 +83,6 @@ const updateNews = async (req, res) => {
 
   const news = await News.findByPk(Number(news_id));
 
-  const curr_headline = news.headline;
   if (!news) {
     return res.status(404).json({
       status: "error",
@@ -91,6 +90,7 @@ const updateNews = async (req, res) => {
     });
   }
 
+  const curr_headline = news.headline;
   await news.update({
     headline,
     content,
